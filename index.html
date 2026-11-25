@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Cool Duck 1</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <canvas id="c" width="512" height="288"></canvas>
@@ -12,56 +12,56 @@
 <div id="tc"><div><button data-k="ArrowLeft">◀</button><button data-k="ArrowRight">▶</button></div><div><button data-k="ShiftLeft">⚡</button><button data-k="KeyQ">🧣</button><button data-k="KeyF">🥚</button><button data-k="KeyE">E</button><button data-k="Space">▲</button></div></div>
 
 <!-- Embedded fonts + audio (base64). Must load first. -->
-<script src="js/data/font-data.js?v=65"></script>
-<script src="js/data/sidewalk-swagger-data.js?v=65"></script>
-<script src="js/data/music-data.js?v=65"></script>
-<script src="js/data/late-night-data.js?v=65"></script>
-<script src="js/data/clear-skies-data.js?v=65"></script>
-<script src="js/data/scratch-sound-data.js?v=65"></script>
-<script src="js/data/stamp-sound-data.js?v=65"></script>
+<script src="font-data.js?v=65"></script>
+<script src="sidewalk-swagger-data.js?v=65"></script>
+<script src="music-data.js?v=65"></script>
+<script src="late-night-data.js?v=65"></script>
+<script src="clear-skies-data.js?v=65"></script>
+<script src="scratch-sound-data.js?v=65"></script>
+<script src="stamp-sound-data.js?v=65"></script>
 
 <!-- Game code. ORDER MATTERS: files run top to bottom, exactly as in the original single file. -->
-<script src="js/01-setup.js?v=65"></script>
-<script src="js/02-input.js?v=65"></script>
-<script src="js/03-audio.js?v=65"></script>
-<script src="js/04-drawing-helpers.js?v=65"></script>
-<script src="js/05-level.js?v=65"></script>
-<script src="js/06-city-background.js?v=65"></script>
-<script src="js/07-duck-model.js?v=65"></script>
-<script src="js/08-player-animation.js?v=65"></script>
-<script src="js/09-space-tutorial.js?v=65"></script>
-<script src="js/10-coins-flowers-platforms.js?v=65"></script>
-<script src="js/11-spit-attack.js?v=65"></script>
-<script src="js/12-bubble-attack.js?v=65"></script>
-<script src="js/13-game-logic.js?v=65"></script>
-<script src="js/14-characters-drawing.js?v=65"></script>
-<script src="js/15-scenery.js?v=65"></script>
-<script src="js/16-slimes-and-kills.js?v=65"></script>
-<script src="js/17-tutorial-level.js?v=65"></script>
-<script src="js/18-cosmetics-and-save.js?v=65"></script>
-<script src="js/19-main-screen.js?v=65"></script>
-<script src="js/20-lobby-and-shop.js?v=65"></script>
-<script src="js/21-street-level.js?v=65"></script>
-<script src="js/22-render-pipeline.js?v=65"></script>
-<script src="js/23-street-floor.js?v=65"></script>
-<script src="js/24-penguin-enemy.js?v=65"></script>
-<script src="js/25-car-and-level-clear.js?v=65"></script>
-<script src="js/26-music-and-main-loop.js?v=65"></script>
-<script src="js/27-tutorial-scenery.js?v=65"></script>
-<script src="js/28-hits-stars-gameover.js?v=65"></script>
-<script src="js/29-skate-tricks-props.js?v=65"></script>
-<script src="js/30-level-two.js?v=65"></script>
-<script src="js/31-colors-and-boards.js?v=65"></script>
-<script src="js/32-level-three.js?v=65"></script>
-<script src="js/33-grassland-scenery.js?v=65"></script>
-<script src="js/34-pro-ui.js?v=65"></script>
-<script src="js/35-egg-attack.js?v=65"></script>
-<script src="js/36-star-book.js?v=65"></script>
-<script src="js/37-gamepad.js?v=65"></script>
-<script src="js/38-cinematic-intro.js?v=65"></script>
-<script src="js/39-bread-and-story.js?v=65"></script>
-<script src="js/40-floating-platforms.js?v=65"></script>
-<script src="js/41-world-map.js?v=65"></script>
-<script src="js/42-checkpoint.js?v=65"></script>
+<script src="01-setup.js?v=65"></script>
+<script src="02-input.js?v=65"></script>
+<script src="03-audio.js?v=65"></script>
+<script src="04-drawing-helpers.js?v=65"></script>
+<script src="05-level.js?v=65"></script>
+<script src="06-city-background.js?v=65"></script>
+<script src="07-duck-model.js?v=65"></script>
+<script src="08-player-animation.js?v=65"></script>
+<script src="09-space-tutorial.js?v=65"></script>
+<script src="10-coins-flowers-platforms.js?v=65"></script>
+<script src="11-spit-attack.js?v=65"></script>
+<script src="12-bubble-attack.js?v=65"></script>
+<script src="13-game-logic.js?v=65"></script>
+<script src="14-characters-drawing.js?v=65"></script>
+<script src="15-scenery.js?v=65"></script>
+<script src="16-slimes-and-kills.js?v=65"></script>
+<script src="17-tutorial-level.js?v=65"></script>
+<script src="18-cosmetics-and-save.js?v=65"></script>
+<script src="19-main-screen.js?v=65"></script>
+<script src="20-lobby-and-shop.js?v=65"></script>
+<script src="21-street-level.js?v=65"></script>
+<script src="22-render-pipeline.js?v=65"></script>
+<script src="23-street-floor.js?v=65"></script>
+<script src="24-penguin-enemy.js?v=65"></script>
+<script src="25-car-and-level-clear.js?v=65"></script>
+<script src="26-music-and-main-loop.js?v=65"></script>
+<script src="27-tutorial-scenery.js?v=65"></script>
+<script src="28-hits-stars-gameover.js?v=65"></script>
+<script src="29-skate-tricks-props.js?v=65"></script>
+<script src="30-level-two.js?v=65"></script>
+<script src="31-colors-and-boards.js?v=65"></script>
+<script src="32-level-three.js?v=65"></script>
+<script src="33-grassland-scenery.js?v=65"></script>
+<script src="34-pro-ui.js?v=65"></script>
+<script src="35-egg-attack.js?v=65"></script>
+<script src="36-star-book.js?v=65"></script>
+<script src="37-gamepad.js?v=65"></script>
+<script src="38-cinematic-intro.js?v=65"></script>
+<script src="39-bread-and-story.js?v=65"></script>
+<script src="40-floating-platforms.js?v=65"></script>
+<script src="41-world-map.js?v=65"></script>
+<script src="42-checkpoint.js?v=65"></script>
 </body>
 </html>
