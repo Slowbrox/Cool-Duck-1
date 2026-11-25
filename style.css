@@ -1,0 +1,12 @@
+/* Page layout, light/dark colours and touch controls for the game canvas */
+:root{--bg:#efe6d6;--fg:#2b2236;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14111c;--fg:#f1e8d8}}
+:root[data-theme="dark"]{--bg:#14111c;--fg:#f1e8d8}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font:14px "Segoe UI",system-ui,Arial,sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+canvas{image-rendering:pixelated;width:min(100vw,calc((100vh - 70px)*16/9));max-width:100%;aspect-ratio:16/9;background:#000;touch-action:none}
+p{margin:0;opacity:.95;font-size:15px;font-weight:600;line-height:1.35;text-align:center;padding:0 10px}
+#tc{display:none;width:100%;justify-content:space-between;padding:0 12px;box-sizing:border-box}
+#tc div{display:flex;gap:10px}
+#tc button{width:64px;height:48px;font-size:20px;border-radius:12px;border:2px solid var(--fg);background:transparent;color:var(--fg)}
+@media(pointer:coarse){#tc{display:flex}}
